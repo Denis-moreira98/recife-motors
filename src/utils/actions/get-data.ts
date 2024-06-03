@@ -31,3 +31,30 @@ export async function getDataSubMenu() {
       throw new Error("Failed to get data", error);
    }
 }
+
+export async function getItemBySlog(itemSlug: string) {
+   const baseUrl = `${process.env.NEXT_PUBLIC_API}/objects`;
+
+   // definindo o objeto de consulta pelo slug
+   const queryParams = new URLSearchParams({
+      query: JSON.stringify({
+         slug: itemSlug,
+      }),
+      props: "slug,title,content,metadata",
+      read_key: process.env.READ_KEY as string,
+   });
+
+   const url = `${baseUrl}?${queryParams.toString()}`;
+
+   try {
+      const res = await fetch(url, { next: { revalidate: 120 } });
+
+      if (!res.ok) {
+         throw new Error("Failed to item by slug");
+      }
+
+      return res.json();
+   } catch (error: any) {
+      throw new Error("Failed to get item by slug", error);
+   }
+}
