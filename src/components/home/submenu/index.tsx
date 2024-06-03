@@ -29,16 +29,20 @@ export function Submenu() {
       <section className={styles.submenu}>
          <div className={styles.submenuIcon} onClick={toggleMenu}>
             <Menu size={30} color="#121212" />
+            Serviços
          </div>
          <ul className={`${styles.ul} ${isOpen ? styles.open : ""}`}>
             <li>
-               <Link href="/">Troca de Oleo</Link>
+               <Link href="/">Alinhamento</Link>
+            </li>
+            <li>
+               <Link href="/">Troca de Óleo</Link>
             </li>
             <li>
                <Link href="/">Revisão</Link>
             </li>
             <li>
-               <Link href="/">Alinhamento</Link>
+               <Link href="/">Troca de Pneu</Link>
             </li>
             <>
                <div className={styles.divClose}>
@@ -47,7 +51,7 @@ export function Submenu() {
                         onClick={toggleMenu}
                         className={styles.closeButton}
                      >
-                        <X size={32} color="#EA1E3F" />
+                        <X size={28} color="#EA1E3F" />
                      </button>
                   )}
                </div>
