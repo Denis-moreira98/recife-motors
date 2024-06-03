@@ -3,10 +3,14 @@
 import { useEffect, useState } from "react";
 import styles from "./styles.module.scss";
 import Link from "next/link";
-
 import { X, Menu } from "lucide-react";
+import { MenuProps } from "@/utils/menu.type";
 
-export function Submenu() {
+interface SubMenuProps {
+   menu: MenuProps;
+}
+
+export function Submenu({ menu }: SubMenuProps) {
    const [isOpen, setIsOpen] = useState(false);
 
    useEffect(() => {
@@ -32,18 +36,12 @@ export function Submenu() {
             Serviços
          </div>
          <ul className={`${styles.ul} ${isOpen ? styles.open : ""}`}>
-            <li>
-               <Link href="/">Alinhamento</Link>
-            </li>
-            <li>
-               <Link href="/">Troca de Óleo</Link>
-            </li>
-            <li>
-               <Link href="/">Revisão</Link>
-            </li>
-            <li>
-               <Link href="/">Troca de Pneu</Link>
-            </li>
+            {menu.objects.map((item) => (
+               <li key={item.slug}>
+                  <Link href={`/post/${item.slug}`}>{item.title}</Link>
+               </li>
+            ))}
+
             <>
                <div className={styles.divClose}>
                   {isOpen && (
