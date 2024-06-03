@@ -1,7 +1,7 @@
 export interface HomeProps {
    object: {
       slug: string;
-      titles: string;
+      title: string;
       metadata: {
          banner: {
             url: string;
