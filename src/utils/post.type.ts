@@ -14,7 +14,7 @@ interface ObjectPost {
          url: string;
       };
       description: {
-         titles: string;
+         title: string;
          text: string;
          banner: {
             url: string;

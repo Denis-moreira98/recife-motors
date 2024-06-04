@@ -32,10 +32,10 @@ export async function getDataSubMenu() {
    }
 }
 
-export async function getItemBySlog(itemSlug: string) {
+export async function getItemBySlug(itemSlug: string) {
    const baseUrl = `${process.env.NEXT_PUBLIC_API}/objects`;
 
-   // definindo o objeto de consulta pelo slug
+   // Definindo o objeto de consulta pelo slug
    const queryParams = new URLSearchParams({
       query: JSON.stringify({
          slug: itemSlug,
@@ -50,11 +50,11 @@ export async function getItemBySlog(itemSlug: string) {
       const res = await fetch(url, { next: { revalidate: 120 } });
 
       if (!res.ok) {
-         throw new Error("Failed to item by slug");
+         throw new Error("Failed get item by slug");
       }
 
       return res.json();
    } catch (error: any) {
-      throw new Error("Failed to get item by slug", error);
+      throw new Error("Failed get item by slug", error);
    }
 }
