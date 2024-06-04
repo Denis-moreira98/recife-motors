@@ -5,7 +5,7 @@ import { getDataHome, getDataSubMenu } from "@/utils/actions/get-data";
 import { FaWhatsapp } from "react-icons/fa";
 import { Services } from "@/components/home/services";
 import { Container } from "@/components/container";
-import { Footer } from "@/components/home/footer";
+import { Contact } from "@/components/home/contact";
 import { MenuProps } from "@/utils/menu.type";
 
 export default async function Home() {
@@ -27,7 +27,7 @@ export default async function Home() {
 
          <Container>
             <Services object={object} />
-            <Footer object={object} />
+            <Contact object={object} />
          </Container>
       </main>
    );
