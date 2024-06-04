@@ -35,6 +35,7 @@ export function Hero({
                priority={true}
                fill={true}
                className={styles.banner}
+               sizes="(max-width: 480) 100vw, (max-width: 1024px) 75v, 50vw"
             />
          </div>
       </main>

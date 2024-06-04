@@ -49,6 +49,8 @@ export default async function Post({
                      alt={objects[0].title}
                      quality={100}
                      fill={true}
+                     priority={true}
+                     sizes="(max-width: 480) 100vw, (max-width: 1024px) 75v, 60vw"
                      src={objects[0].metadata.description.banner.url}
                   />
                </div>
