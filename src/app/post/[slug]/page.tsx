@@ -21,7 +21,7 @@ export async function generateMetadata({
       });
 
       return {
-         title: `DevMotors - ${objects[0].title}`,
+         title: `Recife Motors - ${objects[0].title}`,
          description: `${objects[0].metadata.description.text}`,
          keywords: [
             "Recife Motors",
