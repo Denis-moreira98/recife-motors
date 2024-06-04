@@ -1,4 +1,4 @@
-.footer {
+.contactContainer {
    display: flex;
    flex-direction: column;
    align-items: center;
@@ -53,10 +53,6 @@
 
 .link:hover {
    transform: scale(1.09);
-}
-
-.copyText {
-   margin-top: 64px;
 }
 
 @media (min-width: 640px) {

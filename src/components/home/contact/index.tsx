@@ -3,9 +3,9 @@ import styles from "./styles.module.scss";
 import { Mail, Map, Phone, Clock } from "lucide-react";
 import { FaWhatsapp } from "react-icons/fa";
 
-export function Footer({ object }: HomeProps) {
+export function Contact({ object }: HomeProps) {
    return (
-      <footer id="contatos" className={styles.footer}>
+      <section id="contatos" className={styles.contactContainer}>
          <section className={styles.section}>
             <h2 className={styles.title}>Contatos</h2>
 
@@ -52,12 +52,6 @@ export function Footer({ object }: HomeProps) {
             <FaWhatsapp size={24} color="#fff" />
             {object.metadata.cta_button.title}
          </a>
-
-         <p className={styles.copyText}>
-            Todos direitos reservados <strong>{object.title}</strong> Copyright
-            &copy; {""}
-            {`${new Date().getFullYear()}`}
-         </p>
-      </footer>
+      </section>
    );
 }
