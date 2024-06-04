@@ -1,0 +1,89 @@
+.submenu {
+   margin: 0 auto;
+   max-width: 1280px;
+   padding: 64px 14px 4px 14px;
+}
+.submenuIcon {
+   display: none;
+   gap: 14px;
+   align-items: center;
+   font-size: 18px;
+   font-weight: bold;
+   cursor: pointer;
+}
+.ul {
+   display: none;
+   list-style: none;
+   padding: 14px 0;
+   row-gap: 23px;
+   column-gap: 14px;
+
+   li a {
+      background-color: #121212;
+      color: #fff;
+      padding: 4px 8px;
+      border-radius: 4px;
+   }
+}
+
+.divClose {
+   position: relative;
+}
+
+.closeButton {
+   position: absolute;
+   background-color: transparent;
+   right: 8px;
+   top: -176px;
+}
+
+@media (min-width: 768px) {
+   .ul {
+      display: flex;
+   }
+}
+
+@media (max-width: 768px) {
+   .submenuIcon {
+      display: inline-flex;
+   }
+
+   .ul {
+      z-index: 99;
+      flex-direction: column;
+      position: fixed;
+      left: 27.5%;
+      top: 196px;
+      transform: translate(-50%, -50%);
+      width: 50%;
+      height: auto;
+
+      border-radius: 4px;
+      background-color: rgba(255, 255, 255, 0.952);
+      box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+         rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+
+      &.open {
+         display: flex;
+      }
+   }
+
+   .ul li {
+      a {
+         background-color: transparent;
+         color: #121212;
+         font-size: 16px;
+         font-weight: bold;
+         transition: all 0.5s;
+         margin-left: 5px;
+      }
+
+      a:hover {
+         background-color: #121212;
+         color: #fff;
+      }
+   }
+}
+
+@media (max-width: 768px) {
+}
