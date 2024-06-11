@@ -1,36 +1,37 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Recife Motors  🚙🚗⚒️
 
-## Getting Started
+## Sobre a Empresa
 
-First, run the development server:
+A **Recife Motores** é uma empresa dedicada a proporcionar aos seus clientes uma experiência automotiva excepcional. Com décadas de experiência, sólida credibilidade e um compromisso inabalável com a qualidade, a Recife Motores se especializa em produtos e serviços automotivos, oferecendo uma ampla gama de soluções projetadas para atender às necessidades de veículos de todos os tipos. (Empresa Fictícia)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Sobre o Projeto
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Este projeto foi desenvolvido utilizando o Cosmic CMS para gerenciar todo o conteúdo das páginas do site.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Vantagens do Cosmic CMS
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+- **Flexibilidade**: O Cosmic CMS permite criar e gerenciar conteúdo de forma fácil e intuitiva, adaptando-se a diferentes tipos de projetos.
+- **Escalabilidade**: Ideal para sites que precisam crescer e se adaptar às necessidades em constante mudança.
+- **Integração Simples**: Facilita a integração com diversas tecnologias e frameworks, garantindo uma experiência de desenvolvimento fluida.
+- **Gestão de Conteúdo Eficiente**: Oferece uma interface amigável para que a equipe de marketing e conteúdo possa fazer atualizações sem depender de desenvolvedores.
 
-## Learn More
+## Funcionalidades
 
-To learn more about Next.js, take a look at the following resources:
+- **Página Home**: Com várias seções, incluindo:
+  - Agendar atendimento por WhatsApp
+  - Todos os serviços
+  - Sobre a empresa
+  - Endereço
+  - Contato
+  - E mais
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- **Página de Detalhes do Serviço**: Onde mostramos a importância de cada serviço e como será realizado, com opção para falar diretamente com um atendente pelo WhatsApp.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Tecnologias Utilizadas
 
-## Deploy on Vercel
+- **Next.js 14**: Framework React para desenvolvimento de aplicações web rápidas e escaláveis.
+- **TypeScript**: Superset do JavaScript que adiciona tipagem estática ao código, proporcionando mais segurança e eficiência durante o desenvolvimento.
+- **Sass**: Linguagem de extensão CSS utilizada para estilizar o site de forma modular e organizada.
+- **Cosmic CMS**: Plataforma de gerenciamento de conteúdo que facilita a administração de todos os conteúdos das páginas do site.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+---
