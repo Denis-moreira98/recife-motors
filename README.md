@@ -1,10 +1,5 @@
 # Recife Motors  🚙🚗⚒️
 
-
-![Group 1 (2)](https://github.com/Denis-moreira98/recife-motors/assets/72985107/cdbaa823-7d10-4425-adef-698bea61a90a)
-
-
-
 ## Sobre a Empresa
 
 A **Recife Motores** é uma empresa dedicada a proporcionar aos seus clientes uma experiência automotiva excepcional. Com décadas de experiência, sólida credibilidade e um compromisso inabalável com a qualidade, a Recife Motores se especializa em produtos e serviços automotivos, oferecendo uma ampla gama de soluções projetadas para atender às necessidades de veículos de todos os tipos. (Empresa Fictícia)
